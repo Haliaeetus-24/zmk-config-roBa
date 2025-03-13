@@ -78,10 +78,10 @@
 
         FUNCTION {
             bindings = <
-&none            &none              &none     &none       &none                             &none            &none     &kp EQUAL             &kp CARET              &kp PIPE
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT     &none      &none  &kp AMPERSAND    &kp SQT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-&none            &none              &none     &kp GRAVE   &kp LEFT_BRACE  &none      &none  &kp RIGHT_BRACE  &kt PLUS  &kt ASTERISK          &kp QUESTION           &kp UNDERSCORE
-&none            &none              &none     &none       &trans          &none      &none  &none                                                                   &none
+&none            &none              &none     &none       &none                                                &none            &none     &kp EQUAL             &kp CARET              &kp PIPE
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT     &none              &kp EQUAL         &kp AMPERSAND    &kp SQT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
+&none            &none              &none     &kp GRAVE   &kp LEFT_BRACE  &kp LESS_THAN      &kp GREATER_THAN  &kp RIGHT_BRACE  &kt PLUS  &kt ASTERISK          &kp QUESTION           &kp UNDERSCORE
+&none            &none              &none     &none       &trans          &none              &none             &none                                                                   &none
             >;
         };
 
@@ -96,10 +96,10 @@
 
         ARROW {
             bindings = <
-&none     &none           &kp UP_ARROW    &none            &none                      &none  &none      &none      &none  &none
-&kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &none      &none  &none  &mkp LCLK  &mkp RCLK  &none  &none
-&none     &none           &none           &none            &none    &none      &none  &none  &none      &none      &none  &none
-&none     &none           &none           &none            &none    &none      &none  &none                               &none
+&none     &none           &kp UP_ARROW    &none            &none                      &kp C_AC_FORWARD  &none      &none      &none  &none
+&kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &none      &none  &kp C_AC_BACK     &mkp LCLK  &mkp RCLK  &none  &none
+&none     &none           &none           &none            &none    &none      &none  &none             &none      &none      &none  &none
+&none     &none           &none           &none            &none    &none      &none  &none                                          &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
